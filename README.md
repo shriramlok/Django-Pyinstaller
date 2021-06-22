@@ -2,24 +2,27 @@
 
 Pyinstaller used as follows:-
 
-Generate the manage.spec file to add datas and hidden imports to it, then run pyinstaller
+Generate the manage.spec file to add datas(classifier folder) and hidden imports to it, then run pyinstaller
 ```
 pyi-makespec manage.py
 ```
 ```
 $pyinstaller manage.spec
 ```
-And with --onefile to create single executable with everything in it.
-
-```
-$pyinstaller manage.spec --onefile
-```
-
 
 Run the server with:-
 ```
 .dist/manage/manage runserver --noreload
 ```
+
+Above will create a directory which can be distributed.
+And with --onefile to create single executable with everything in it.
+
+```
+$pyinstaller manage.spec --name resnet --onefile --add-data classifier:classifier
+```
+
+
 
 Errors Encountered:-
 
