@@ -6,6 +6,12 @@ Pyinstaller to be run using:-
 $pyinstaller manage.spec
 ```
 And with --onefile to create single executable with everything in it.
+
+```
+$pyinstaller manage.spec
+```
+
+
 Run the server with:-
 ```
 .dist/manage/manage runserver --noreload
