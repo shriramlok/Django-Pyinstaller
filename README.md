@@ -7,18 +7,18 @@ Generate the manage.spec file to add datas and hidden imports to it, then run py
 pyi-makespec manage.py
 ```
 ```
-$pyinstaller --name=resnet manage.spec
+$pyinstaller manage.spec
 ```
 And with --onefile to create single executable with everything in it.
 
 ```
-$pyinstaller --name=resnet manage.spec --onefile
+$pyinstaller manage.spec --onefile
 ```
 
 
 Run the server with:-
 ```
-.dist/resnet/resnet runserver --noreload
+.dist/manage/manage runserver --noreload
 ```
 
 Errors Encountered:-
