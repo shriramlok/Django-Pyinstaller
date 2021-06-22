@@ -22,7 +22,7 @@ We need to add --onefile to create a single executable.
 ```
 $pyinstaller manage.spec --name resnet --onefile --add-data classifier:classifier
 ```
-(Too big file,mostly because of torch)
+(Too big executable file,mostly because of torch)(The directory generated from --onedir(default) and the executable from --onefile are same size but just the execitable uses more resources while running). 
 
 
 Errors Encountered:-
