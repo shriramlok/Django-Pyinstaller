@@ -2,7 +2,7 @@
 
 Pyinstaller used as follows:-
 
-Generate the manage.spec file to add datas(classifier folder) and hidden imports to it, then run pyinstaller
+Generate the manage.spec file to add datas(classifier folder) and hidden imports and name to it, then run pyinstaller
 ```
 pyi-makespec manage.py
 ```
@@ -12,7 +12,7 @@ $pyinstaller manage.spec
 
 Run the server with:-
 ```
-.dist/manage/manage runserver --noreload
+./resnet/resnet runserver --noreload
 ```
 
 Above will create a directory inside dist/ which contain all packages and everything.
