@@ -1,20 +1,24 @@
 # Django-Pyinstaller
 
-Pyinstaller to be run using:-
+Pyinstaller used as follows:-
 
+Generate the manage.spec file to add datas and hidden imports to it, then run pyinstaller
 ```
-$pyinstaller manage.spec
+pyi-makespec manage.py
+```
+```
+$pyinstaller --name=resnet manage.spec
 ```
 And with --onefile to create single executable with everything in it.
 
 ```
-$pyinstaller manage.spec
+$pyinstaller --name=resnet manage.spec --onefile
 ```
 
 
 Run the server with:-
 ```
-.dist/manage/manage runserver --noreload
+.dist/resnet/resnet runserver --noreload
 ```
 
 Errors Encountered:-
