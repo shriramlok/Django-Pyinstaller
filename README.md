@@ -15,8 +15,9 @@ Run the server with:-
 .dist/manage/manage runserver --noreload
 ```
 
-Above will create a directory which can be distributed.
-And with --onefile to create single executable with everything in it.
+Above will create a directory inside dist/ which contain all packages and everything.
+
+We need to add --onefile to create a single executable.
 
 ```
 $pyinstaller manage.spec --name resnet --onefile --add-data classifier:classifier
